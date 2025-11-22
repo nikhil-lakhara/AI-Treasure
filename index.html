@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ai Treasure</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+    }
+
+    /* Header */
+    .navbar {
+        width: 100%;
+        background: #0f1217;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .search-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    select, input {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .search-btn {
+        background: #f7a63b;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    /* FIXED GRID — THIS MAKES YOUR WEBSITE PERFECT */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+        gap: 40px;
+        padding: 40px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        height: 330px;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    .small-img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .small-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .small-img:hover {
+        transform: translateX(-50%) scale(1.2);
+    }
+
+    .login-btn {
+        display: block;
+        margin: 40px auto;
+        padding: 12px 40px;
+        background: #ffdf00;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">Ai Treasure</div>
+
+    <div class="search-section">
+        <select>
+            <option>All</option>
+            <option>ChatGPT</option>
+            <option>Gemini</option>
+            <option>Claude</option>
+            <option>Microsoft Copilot</option>
+            <option>Meta LLaMA</option>
+        </select>
+
+        <input type="text" placeholder="Search AI as your required.....">
+
+        <button class="search-btn">Go!!..</button>
+    </div>
+
+    <div class="nav-links">
+        <div>Login to All</div>
+        <div>Buy prime version</div>
+        <div>NEED HELP!</div>
+    </div>
+</div>
+
+<h2>Available For All</h2>
+
+<!-- CARDS GRID -->
+<div class="card-container">
+
+    <div class="card"><div class="small-img"><img src="chat.img" ></div>
+    <h3><a href="ChatGPT.html">ChatGPT</a></h3><br>
+<h3>ALL-ROUNDER</h3>
+<ul>
+    <li>Summarize long or complex text</li>
+    <li>Rewrite or improve writing</li>
+    <li>Generate ideas</li>
+    <li>Explain difficult concepts</li>
+    <li>Help with coding</li>
+    <li>Answer questions in depth</li>
+    <li>Translate text</li>
+    <li>Create step-by-step plans</li>
+</ul>
+
+</div>
+    
+
+    <div class="card"><div class="small-img"><img src="gemini.img"></div>
+    <h3><a href="gemini.html">Gemini</a></h3>
+<ul>
+    <li>Picture editing</li>
+<li>Image understanding</li>
+<li>Language translation</li>
+<li>Counseling talk</li>
+<li>Video/photo answering</li>
+<li>Idea generation</li>
+<li>Concept explanation</li>
+<li>Writing help</li>
+</ul>
+</div>
+
+    <div class="card"><div class="small-img"><img src="meta.img"></div>
+    <h3><a href="meta.html">Meta</a></h3>
+    <ul>
+<li>Advanced reasoning</li>
+<li>Long document handling</li>
+<li>Human-like writing</li>
+<li>Fast coding help</li>
+<li>Context understanding</li>
+<li>Accurate summarizing</li>
+<li>Safe responses</li>
+<li>Creative content</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="claude.img"></div>
+    <h3><a href="claude.html">Claude AI</a></h3>
+<ul>
+<li>Advanced reasoning</li>
+<li>Long document handling</li>
+<li>Human-like writing</li>
+<li>Fast coding help</li>
+<li>Context understanding</li>
+<li>Accurate summarizing</li>
+<li>Safe responses</li>
+<li>Creative content</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="perplexity.img"></div>
+    <h3><a href="perplexity.html">Perplexity</a></h3>
+<ul>
+<li>Real-time web search</li>
+<li>Source-based answers</li>
+<li>Fast fact checking</li>
+<li>Research summaries</li>
+<li>Data-driven replies</li>
+<li>Precise explanations</li>
+<li>Expert mode answers</li>
+<li>Direct citations</li>
+</ul>
+
+</div>
+
+
+    <!-- NEXT ROW -->
+    <div class="card"><div class="small-img"><img src="microsoftcopilot.img"></div>
+    <h3><a href="microsoftcopilot.html">Microsoft Copilot</a></h3>
+<ul>
+<li>Office integration</li>
+<li>Email drafting</li>
+<li>Document editing</li>
+<li>PowerPoint making</li>
+<li>Excel analysis</li>
+<li>Windows automation</li>
+<li>Image generation</li>
+<li>Coding support</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="MIDJOURNEY.img"></div>
+    <h3><a href="MIDJOURNEY.html">Midjourney</a></h3>
+<ul>
+<li>High-detail art</li>
+<li>Realistic portraits</li>
+<li>Fantasy designs</li>
+<li>Stylized images</li>
+<li>Creative concepts</li>
+<li>Fast rendering</li>
+<li>Unique aesthetics</li>
+<li>Fine lighting control</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="dell.img"></div>
+    <h3><a href="DALL-E.html">DALL·E</a></h3>
+<ul>
+<li>Photo-real images</li>
+<li>Object editing</li>
+<li>Background removal</li>
+<li>Style blending</li>
+<li>Creative prompts</li>
+<li>Precise face rendering</li>
+<li>Text-in-image ability</li>
+<li>Fast generation</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="RUNWAY ML.img"></div>
+    <h3><a href="RUNWAY ML.html">Runway ML</a></h3>
+<ul>
+<li>Video generation</li>
+<li>Motion editing</li>
+<li>Green-screen tools</li>
+<li>Style transfer</li>
+<li>AI cinematics</li>
+<li>VFX assistance</li>
+<li>Image animation</li>
+<li>Video upscaling</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="deepseek.img"></div>
+    <h3><a href="DEEPSEEK.html">DeepSeek</a></h3>
+<ul>
+<li>Strong coding</li>
+<li>Math solving</li>
+<li>Detailed explanations</li>
+<li>Fast responses</li>
+<li>Logic accuracy</li>
+<li>Efficient reasoning</li>
+<li>Technical writing</li>
+<li>Debugging help</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="pi.img"></div>
+    <h3><a href="PI AI.html">Pi AI</a></h3>
+<ul>
+<li>Friendly chatting</li>
+<li>Emotional support</li>
+<li>Calm replies</li>
+<li>Daily guidance</li>
+<li>Light knowledge help</li>
+<li>Simple explanations</li>
+<li>Soft-tone speaking</li>
+<li>Conversational memory</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="replica.img"></div>
+    <h3><a href="replica.html">Replika</a></h3>
+<ul>
+<li>AI companionship</li>
+<li>Mood support</li>
+<li>Role-play chats</li>
+<li>Daily tracking</li>
+<li>Voice conversations</li>
+<li>Custom avatars</li>
+<li>Personal journaling</li>
+<li>Relationship building</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="jasper.img"></div>
+    <h3><a href="jasper.html">Jasper</a></h3>
+<ul>
+<li>Marketing writing</li>
+<li>Ad copy creation</li>
+<li>SEO text crafting</li>
+<li>Brand-safe content</li>
+<li>Social media posts</li>
+<li>Blog writing</li>
+<li>Product descriptions</li>
+<li>Fast idea generation</li>
+</ul>
+
+</div>
+    
+    <div class="card"><div class="small-img"><img src="notion.img"></div>
+    <h3><a href="notion.html">Notion AI</a></h3>
+<ul>
+<li>Note generation</li>
+<li>Task drafting</li>
+<li>Meeting summaries</li>
+<li>Content rewriting</li>
+<li>Idea brainstorming</li>
+<li>Knowledge search</li>
+<li>Project assistance</li>
+<li>Document cleanup</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="firefly.img"></div>
+    <h3><a href="adobe.html">Adobe Firefly</a></h3>
+<ul>
+<li>Creative image edits</li>
+<li>Style variations</li>
+<li>Text effects</li>
+<li>Object addition</li>
+<li>Photo enhancement</li>
+<li>Generative fill</li>
+<li>Brand-safe visuals</li>
+<li>High-quality output</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="stabled.img"></div>
+    <h3><a href="stableDiffusion.html">Stable Diffusion</a></h3>
+<ul>
+<li>Open-source images</li>
+<li>Custom model training</li>
+<li>Style flexibility</li>
+<li>High creativity</li>
+<li>Local generation</li>
+<li>Text-to-image</li>
+<li>Inpainting ability</li>
+<li>Wide community tools</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="eleven.img"></div>
+    <h3><a href="ElevenLabs.html">ElevenLabs</a></h3>
+<ul>
+<li>Realistic voices</li>
+<li>AI speech creation</li>
+<li>Voice cloning</li>
+<li>Multilingual talking</li>
+<li>Emotion control</li>
+<li>Story narration</li>
+<li>Podcast voices</li>
+<li>Fast audio output</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="pika.img"></div>
+    <h3><a href="picalabs.html">Pika Labs</a></h3>
+<ul>
+<li>AI video generation</li>
+<li>Motion control</li>
+<li>Cinematic shots</li>
+<li>Stylized animation</li>
+<li>Scene transitions</li>
+<li>High creativity</li>
+<li>Video edits</li>
+<li>Fast rendering</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="synthesia.img"></div>
+    <h3><a href="synthesia.html">Synthesia</a></h3>
+<ul>
+<li>AI presenters</li>
+<li>Video narration</li>
+<li>Face talking avatars</li>
+<li>Training videos</li>
+<li>Corporate tutorials</li>
+<li>Multilingual speech</li>
+<li>Custom characters</li>
+<li>Script-to-video</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="heygen.img"></div>
+    <h3><a href="HeyGen.html">HeyGen</a></h3>
+<ul>
+<li>Face swap</li>
+<li>Talking avatars</li>
+<li>Lip sync edit</li>
+<li>Video dubbing</li>
+<li>Voice syncing</li>
+<li>Studio-quality output</li>
+<li>Avatar generation</li>
+<li>Easy video tools</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="luma.img"></div>
+    <h3><a href="LumaAI.html">Luma AI</a></h3>
+<ul>
+<li>3D model capture</li>
+<li>Real scene scanning</li>
+<li>NeRF generation</li>
+<li>High realism</li>
+<li>3D environment build</li>
+<li>Video-to-3D tools</li>
+<li>AR object export</li>
+<li>Fast reconstruction</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="tabnine.img"></div>
+    <h3><a href="tabnine.html">Tabnine</a></h3>
+    <ul>
+<li>AI coding help</li>
+<li>Auto-completions</li>
+<li>Bug detection</li>
+<li>Code suggestions</li>
+<li>Language support</li>
+<li>Secure local models</li>
+<li>Refactoring aid</li>
+<li>Fast developer workflow</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="codewhisperer.img"></div>
+    <h3><a href="AmazoneCodeWhisperer.html">Amazon CodeWhisperer</a></h3>
+
+<ul>
+<li>AI code writing</li>
+<li>Bug fixing</li>
+<li>Code optimization</li>
+<li>Security analysis</li>
+<li>Cloud integration</li>
+<li>Auto-completions</li>
+<li>Multi-language help</li>
+<li>Developer speed-up</li>
+</ul>
+</div>
+
+    
+    <div class="card"><div class="small-img"><img src="mistral.img"></div>
+    <h3><a href="MISTRALAI.html">Mistral AI</a></h3>
+
+<ul>
+<li>Fast responses</li>
+<li>Efficient reasoning</li>
+<li>Strong coding</li>
+<li>Short answers</li>
+<li>Lightweight models</li>
+<li>Open-source friendly</li>
+<li>Text generation</li>
+<li>Good accuracy</li>
+</ul>
+</div>
+    
+    <div class="card"><div class="small-img"><img src="characterAI.img"></div>
+    <h3><a href="characterAI.html">Character AI</a></h3>
+<ul>
+<li>Role-play chats</li>
+<li>Custom characters</li>
+<li>Creative dialogues</li>
+<li>Fun conversations</li>
+<li>AI personalities</li>
+<li>Story interaction</li>
+<li>Voice chat</li>
+<li>Character memory</li>
+</ul>
+
+</div>
+
+</div>
+
+<button class="login-btn">Login</button>
+
+</body>
+</html>

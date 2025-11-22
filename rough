@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ai Treasure</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+    }
+
+    /* Header */
+    .navbar {
+        width: 100%;
+        background: #0f1217;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .search-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    select, input {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .search-btn {
+        background: #f7a63b;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    /* CARD GRID */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 40px;
+        padding: 40px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        height: 360px;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    /* Top round icon */
+    .small-img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .small-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Main clickable image */
+    .main-img {
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+        object-fit: contain;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .main-img:hover {
+        transform: scale(1.1);
+    }
+
+    .login-btn {
+        display: block;
+        margin: 40px auto;
+        padding: 12px 40px;
+        background: #ffdf00;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">Ai Treasure</div>
+
+    <div class="search-section">
+        <select>
+            <option>All</option>
+            <option>ChatGPT</option>
+            <option>Gemini</option>
+            <option>Claude</option>
+            <option>Microsoft Copilot</option>
+            <option>Meta LLaMA</option>
+        </select>
+
+        <input type="text" placeholder="Search AI as your required.....">
+
+        <button class="search-btn">Go!!..</button>
+    </div>
+
+    <div class="nav-links">
+        <div>Login to All</div>
+        <div>Buy prime version</div>
+        <div>NEED HELP!</div>
+    </div>
+</div>
+
+<h2>Available For All</h2>
+
+<!-- CARDS GRID -->
+<div class="card-container">
+
+    <!-- ChatGPT -->
+    <div class="card">
+        <div class="small-img"><img src="chat.img"></div>
+        <a href="https://chat.openai.com" target="_blank">
+            <img class="main-img" src="chat.img">
+        </a>
+        <h3>ChatGPT</h3>
+    </div>
+
+    <!-- Gemini -->
+    <div class="card">
+        <div class="small-img"><img src="gemini.img"></div>
+        <a href="https://gemini.google.com" target="_blank">
+            <img class="main-img" src="gemini.img">
+        </a>
+        <h3>Gemini</h3>
+    </div>
+
+    <!-- Meta AI -->
+    <div class="card">
+        <div class="small-img"><img src="meta.img"></div>
+        <a href="https://meta.ai" target="_blank">
+            <img class="main-img" src="meta.img">
+        </a>
+        <h3>Meta AI</h3>
+    </div>
+
+    <!-- Claude -->
+    <div class="card">
+        <div class="small-img"><img src="claude.jpg"></div>
+        <a href="https://claude.ai" target="_blank">
+            <img class="main-img" src="claude.jpg">
+        </a>
+        <h3>Claude AI</h3>
+    </div>
+
+    <!-- Perplexity -->
+    <div class="card">
+        <div class="small-img"><img src="perplexity.jpg"></div>
+        <a href="https://www.perplexity.ai" target="_blank">
+            <img class="main-img" src="perplexity.jpg">
+        </a>
+        <h3>Perplexity</h3>
+    </div>
+
+    <!-- Microsoft Copilot -->
+    <div class="card">
+        <div class="small-img"><img src="copilot.jpg"></div>
+        <a href="https://copilot.microsoft.com" target="_blank">
+            <img class="main-img" src="copilot.jpg">
+        </a>
+        <h3>Microsoft Copilot</h3>
+    </div>
+
+    <!-- Midjourney -->
+    <div class="card">
+        <div class="small-img"><img src="midjourney.jpg"></div>
+        <a href="https://www.midjourney.com" target="_blank">
+            <img class="main-img" src="midjourney.jpg">
+        </a>
+        <h3>Midjourney</h3>
+    </div>
+
+    <!-- DALL·E -->
+    <div class="card">
+        <div class="small-img"><img src="dalle.jpg"></div>
+        <a href="https://openai.com/dall-e" target="_blank">
+            <img class="main-img" src="dalle.jpg">
+        </a>
+        <h3>DALL·E</h3>
+    </div>
+
+    <!-- Runway ML -->
+    <div class="card">
+        <div class="small-img"><img src="runway.jpg"></div>
+        <a href="https://runwayml.com" target="_blank">
+            <img class="main-img" src="runway.jpg">
+        </a>
+        <h3>Runway ML</h3>
+    </div>
+
+    <!-- Mistral -->
+    <div class="card">
+        <div class="small-img"><img src="mistral.jpg"></div>
+        <a href="https://mistral.ai" target="_blank">
+            <img class="main-img" src="mistral.jpg">
+        </a>
+        <h3>Mistral AI</h3>
+    </div>
+
+</div>
+
+<button class="login-btn">Login</button>
+
+</body>
+</html>
